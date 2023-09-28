@@ -3,37 +3,58 @@ package servlet;
 import entity.Quest;
 import entity.Question;
 import repository.Repository;
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.Map;
-import java.util.Set;
 
 @WebServlet(name = "QuestServlet", value = "/start")
 public class QuestServlet extends HttpServlet {
+    int index = 0;
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Quest quest = Repository.getQuest();
-        resp.setContentType("text/html");
+        ArrayList<Question> questions = quest.questions;
+
+        if(index == questions.size()){
+            req.setAttribute("end", true);
+            index =0;
+            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/quest.jsp");
+            requestDispatcher.forward(req,resp);
+        }
+        HttpSession session = req.getSession(true);
+        req.setAttribute("questions", questions.get(index).getAnswwerds());
+        req.setAttribute("question", questions.get(index).getQuestion());
+
         Map<String, String[]> parameterMap = req.getParameterMap();
-        PrintWriter writer = resp.getWriter();
-        Set<String> strings = parameterMap.keySet();
 
-        for(Question question : quest.questions){
-            String question1 = question.getQuestion();
-            writer.println(question1);
-            writer.println("<button> Answer </button>");
+        if(parameterMap.get("answer")!=null){
+            String answer = parameterMap.get("answer")[0];
+            if(answer.equals(questions.get(index).getAnswerd())){
+                req.setAttribute("result", true);
+                index++;
+            }
+            else{
+                req.setAttribute("result", false);
+                index=0;
+                req.getSession().invalidate();
+            }
+
         }
 
-        for (String s: strings){
-            writer.println(s);
-        }
-
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("/quest.jsp");
+        requestDispatcher.forward(req,resp);
 
     }
+
+
+
+
 }
