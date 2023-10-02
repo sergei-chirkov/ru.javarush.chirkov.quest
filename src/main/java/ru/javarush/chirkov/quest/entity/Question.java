@@ -1,4 +1,4 @@
-package entity;
+package ru.javarush.chirkov.quest.entity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,6 +7,8 @@ public class Question {
     public String question ;
     public List<String> answwerds = new ArrayList<>();
     public String answerd ;
+
+    public String nameImg;
 
     public String getQuestion() {
         return question;
@@ -18,6 +20,10 @@ public class Question {
 
     public String getAnswerd() {
         return answerd;
+    }
+
+    public String getNameImg() {
+        return nameImg;
     }
 
     @Override

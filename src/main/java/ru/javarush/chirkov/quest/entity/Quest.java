@@ -1,15 +1,16 @@
-package entity;
+package ru.javarush.chirkov.quest.entity;
 
 import java.util.ArrayList;
 
 public class Quest {
+    public String questName;
     public ArrayList<Question> questions = new ArrayList<>();
+
     @Override
     public String toString() {
         return "Quest{" +
-                "questions=" + questions +
+                "questName='" + questName + '\'' +
+                ", questions=" + questions +
                 '}';
     }
-
-
 }
