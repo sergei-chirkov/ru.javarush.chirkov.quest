@@ -2,42 +2,43 @@
   "questName": "quest",
   "questions": [
     {
-      "question": "Что делает Билл Гейтс?",
+      "question": "Вопрос 1",
       "answwerds": [
-        "Показывает как высоко он сидит",
-        "Показывает какой объем информации помещается на диск"
+        "Ответ 1",
+        "Ответ 2"
       ],
-      "answerd": "Показывает какой объем информации помещается на диск",
-      "nameImg" : "https://cs13.pikabu.ru/post_img/2020/01/19/10/og_og_157945511426699035.jpg"
+      "answerd": "Ответ 2",
+      "nameImg" : "1.jpg"
 
     },
     {
-      "question": "Это первый логотип известной компании. Какой?",
+      "question": "Вопрос 2",
       "answwerds": [
-        "apple",
-        "Samsung",
-        "Google"
+        "Ответ 1",
+        "Ответ 2",
+        "Ответ 3"
       ],
-      "answerd": "apple",
-      "nameImg" : "https://logocharts.com/wp-content/uploads/2021/12/Is-Apple-logo-based-on-Turing.png"
+      "answerd": "Ответ 1",
+      "nameImg" : "2.jpg"
+    },
+    {
+      "question": "Вопрос 2",
+      "answwerds": [
+        "Ответ 1",
+        "Ответ 2"
+      ],
+      "answerd": "Ответ 2",
+      "nameImg" :"3.jpg"
     },
     {
       "question": "Что это?",
       "answwerds": [
-        "Первый компьютер",
-        "первый двигатель внутреннего сгорания"
+        "Ответ 1",
+        "Ответ 2",
+        "Ответ 3"
       ],
-      "answerd": "Первый компьютер",
-      "nameImg" :"https://kto-chto-gde.ru/wp-content/uploads/2016/12/f5afdb1350e96df6de0cb58f88cd1fba.jpg"
-    },
-    {
-      "question": "Что это?",
-      "answwerds": [
-        "Комп. мышь",
-        "картоприемник"
-      ],
-      "answerd": "Комп. мышь",
-      "nameImg" :"https://ds-service39.ru/wp-content/uploads/3/f/a/3facdc5ccac4ac629914a975935f3354.jpeg"
+      "answerd": "Ответ 1",
+      "nameImg" :"4.jpeg"
     }
   ]
 }

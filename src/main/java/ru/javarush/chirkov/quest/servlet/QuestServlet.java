@@ -17,13 +17,13 @@ import java.util.Map;
 
 @WebServlet(name = "QuestServlet", value = "/start")
 public class QuestServlet extends HttpServlet {
-    Quest quest = Repository.getQuest();
+    Quest quest =  quest = Repository.getQuest("quest");;
     ArrayList<Question> questions = quest.questions;
     int idUser;
     int index = 0;
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println(quest);
+
         if (req.getAttribute("id") != null) {
             idUser = (int) req.getAttribute("id");
         }
@@ -35,7 +35,6 @@ public class QuestServlet extends HttpServlet {
 
             RequestDispatcher requestDispatcher = req.getRequestDispatcher("/statistic");
             requestDispatcher.forward(req, resp);
-
         }
 
 
@@ -66,6 +65,7 @@ public class QuestServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String questName = req.getParameter("selectbasic");
         String userName = req.getParameter("UserName");
+        quest = Repository.getQuest(questName);
         doGet(req, resp);
     }
 

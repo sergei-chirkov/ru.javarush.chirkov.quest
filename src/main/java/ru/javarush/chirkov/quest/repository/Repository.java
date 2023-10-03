@@ -18,14 +18,13 @@ public class Repository {
     private static Quest quest = new Quest();
     public static Users users = new Users();
 
-    public static Quest getQuest() {
+    public static Quest getQuest(String nameQuest) {
         ObjectMapper objectMapper = new ObjectMapper();
         URL location = Repository.class.getProtectionDomain().getCodeSource().getLocation();
         File filePath = new File(location.getPath());
-        Path path = Path.of("quest.json");
+        Path path = Path.of(nameQuest + ".json");
         Path result = filePath.toPath().resolve(path);
         File file = new File(result.toString());
-
         try {
             quest = objectMapper.readValue(file, Quest.class);
         } catch (IOException e) {
