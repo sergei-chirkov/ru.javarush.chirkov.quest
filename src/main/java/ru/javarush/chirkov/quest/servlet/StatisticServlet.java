@@ -1,4 +1,4 @@
-package ru.javarush.chirkov.quest.entity.servlet;
+package ru.javarush.chirkov.quest.servlet;
 
 import ru.javarush.chirkov.quest.entity.User;
 import jakarta.servlet.RequestDispatcher;
@@ -8,7 +8,7 @@ import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import ru.javarush.chirkov.quest.entity.repository.Repository;
+import ru.javarush.chirkov.quest.repository.Repository;
 
 import java.io.IOException;
 import java.net.Inet4Address;

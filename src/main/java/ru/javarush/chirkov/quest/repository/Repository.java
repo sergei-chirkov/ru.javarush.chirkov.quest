@@ -1,4 +1,4 @@
-package ru.javarush.chirkov.quest.entity.repository;
+package ru.javarush.chirkov.quest.repository;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -46,7 +46,6 @@ public class Repository {
         for(File file : lst){
             if(file.getName().endsWith(".json")){
                 questsName.add(file.getName().replaceFirst("[.][^.]+$",""));
-
             }
         }
         return questsName;

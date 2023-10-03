@@ -1,9 +1,9 @@
-package ru.javarush.chirkov.quest.entity.servlet;
+package ru.javarush.chirkov.quest.servlet;
 
 import ru.javarush.chirkov.quest.entity.Quest;
 import ru.javarush.chirkov.quest.entity.Question;
 import ru.javarush.chirkov.quest.entity.User;
-import ru.javarush.chirkov.quest.entity.repository.Repository;
+import ru.javarush.chirkov.quest.repository.Repository;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

@@ -1,5 +1,7 @@
 package ru.javarush.chirkov.quest.entity;
 
+import ru.javarush.chirkov.quest.entity.User;
+
 import java.util.ArrayList;
 import java.util.List;
 

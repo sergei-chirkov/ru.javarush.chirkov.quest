@@ -1,4 +1,4 @@
-<%@ page import="ru.javarush.chirkov.quest.entity.repository.Repository" %>
+<%@ page import="ru.javarush.chirkov.quest.repository.Repository" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.Date" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>

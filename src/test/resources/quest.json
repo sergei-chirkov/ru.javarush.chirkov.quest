@@ -1,0 +1,50 @@
+{
+  "questName": "quest",
+  "questions": [
+    {
+      "question": "Что делает Билл Гейтс?",
+      "answwerds": [
+        "Показывает как высоко он сидит",
+        "Показывает какой объем информации помещается на диск"
+      ],
+      "answerd": "Показывает какой объем информации помещается на диск",
+      "nameImg" : "https://cs13.pikabu.ru/post_img/2020/01/19/10/og_og_157945511426699035.jpg"
+
+    },
+    {
+      "question": "Это первый логотип известной компании. Какой?",
+      "answwerds": [
+        "apple",
+        "Samsung",
+        "Google"
+      ],
+      "answerd": "apple",
+      "nameImg" : "https://logocharts.com/wp-content/uploads/2021/12/Is-Apple-logo-based-on-Turing.png"
+    },
+    {
+      "question": "Что это?",
+      "answwerds": [
+        "Первый компьютер",
+        "первый двигатель внутреннего сгорания"
+      ],
+      "answerd": "Первый компьютер",
+      "nameImg" :"https://kto-chto-gde.ru/wp-content/uploads/2016/12/f5afdb1350e96df6de0cb58f88cd1fba.jpg"
+    },
+    {
+      "question": "Что это?",
+      "answwerds": [
+        "Комп. мышь",
+        "картоприемник"
+      ],
+      "answerd": "Комп. мышь",
+      "nameImg" :"https://ds-service39.ru/wp-content/uploads/3/f/a/3facdc5ccac4ac629914a975935f3354.jpeg"
+    }
+  ]
+}
+
+
+
+
+
+
+
