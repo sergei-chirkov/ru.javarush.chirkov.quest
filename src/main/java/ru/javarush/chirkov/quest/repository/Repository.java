@@ -34,7 +34,6 @@ public class Repository {
         return quest;
     }
     public static User getStatistic(int id){
-
         return users.getUser(id);
     }
     public static List<String> getQustsName() {

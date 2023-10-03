@@ -66,12 +66,6 @@ public class QuestServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String questName = req.getParameter("selectbasic");
         String userName = req.getParameter("UserName");
-//        user = new User(userName);
-//        Repository.users.setUser(user);
-//        req.setAttribute("user", userName);
-//        req.setAttribute("questName", questName);
-//        RequestDispatcher requestDispatcher = req.getRequestDispatcher("/start");
-//        requestDispatcher.forward(req,resp);
         doGet(req, resp);
     }
 

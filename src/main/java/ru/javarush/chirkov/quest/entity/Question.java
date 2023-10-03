@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Question {
-    public String question ;
-    public List<String> answwerds = new ArrayList<>();
-    public String answerd ;
+    private String question ;
+    private List<String> answwerds = new ArrayList<>();
+    private String answerd ;
 
     public String nameImg;
 
